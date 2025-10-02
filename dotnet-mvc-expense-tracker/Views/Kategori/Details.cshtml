@@ -1,0 +1,23 @@
+﻿@model dotnet_mvc_expense_tracker.Models.Kategori
+@{
+    ViewData["Title"] = "Detail Kategori";
+}
+
+<div class="card">
+    <div class="card-header"><h3 class="card-title">Detail Kategori</h3></div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-2">ID</dt>
+            <dd class="col-sm-10">@Model.Id</dd>
+            <dt class="col-sm-2">Tipe</dt>
+            <dd class="col-sm-10">@Model.Tipe</dd>
+            <dt class="col-sm-2">Nama</dt>
+            <dd class="col-sm-10">@Model.Nama</dd>
+            <dt class="col-sm-2">Deskripsi</dt>
+            <dd class="col-sm-10">@Model.Deskripsi</dd>
+            <dt class="col-sm-2">Status</dt>
+            <dd class="col-sm-10">@Model.Status</dd>
+        </dl>
+        <a asp-action="Index" class="btn btn-secondary">Kembali</a>
+    </div>
+</div>
